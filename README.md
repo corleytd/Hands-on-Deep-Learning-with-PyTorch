@@ -19,7 +19,8 @@
 ```shell
 conda create -n handsondlbase python=3.9.13 -y
 conda install pytorch==1.11.0 cudatoolkit=11.1 -c pytorch -c conda-forge -y
-conda install numpy jupyter matplotlib seaborn -y
+conda install pandas matplotlib seaborn jupyter scikit-learn -y
+conda install torchvision=0.12.0 -c pytorch --no-deps -y
 ```
 
 如果不需要GPU版，也可以直接安装PyTorch，不安装cudatoolkit。
@@ -48,6 +49,7 @@ conda install numpy jupyter matplotlib seaborn -y
 
   ![sse_3d_image](assets/sse_3d_image.png)
 - 导数与梯度
+
   ![derivative_and_grad](assets/derivative_and_grad.png)
 - ……
 
