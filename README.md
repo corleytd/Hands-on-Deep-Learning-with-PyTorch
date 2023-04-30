@@ -21,7 +21,7 @@ conda create -n handsondlbase python=3.9.10 -y
 conda install pytorch==1.11.0 cudatoolkit=11.1 -c pytorch -c conda-forge -y
 conda install pandas matplotlib seaborn jupyter scikit-learn tensorboard -y
 conda install torchvision=0.12.0 -c pytorch --no-deps -y
-pip install tqdm
+pip install tqdm opencv-python
 ```
 
 如果不需要GPU版，也可以不安装cudatoolkit、直接安装PyTorch。
@@ -48,6 +48,10 @@ pip install tqdm
    - [梯度不平稳性与Dead ReLU Problem](4_stability_and_optimization_of_neural_network/gradient_instability_and_dead_relu_problem.ipynb)
    - [Xavier与Kaiming参数初始化](4_stability_and_optimization_of_neural_network/xavier_and_kaiming_weight_initialization.ipynb)
    - [数据归一化与Batch Norm](4_stability_and_optimization_of_neural_network/data_normalization_and_batch_norm.ipynb)
+   - [学习率调度](4_stability_and_optimization_of_neural_network/learning_rate_scheduling.ipynb)
+5. 深度视觉与卷积神经网络
+   - [图像处理与卷积神经网络](5_deep_vision_and_convolutional_neural_network/image_processing_and_convolutional_neural_network.ipynb)
+   - [经典卷积神经网络与模型评估](5_deep_vision_and_convolutional_neural_network/classical_convolutional_neural_networks_and_model_architecture_evaluation.ipynb)
 
 ### 运行结果示例
 
@@ -71,6 +75,9 @@ pip install tqdm
 - 带BN的模型的学习率的U型学习曲线
 
   ![bn_lr_learning_curve](assets/bn_lr_learning_curve.png)
+- OpenCV使用拉普拉斯算子和索贝尔算子进行边缘检测
+
+  ![opencv_laplacian_sobel_detection](assets/opencv_laplacian_sobel_detection.png)
 
 ### 持续更新中……
 
